@@ -30,7 +30,7 @@ public class Vehicle {
 	}
 
 	public void setPlate(String plate) {
-		this.plate = plate;
+		if(plate.length()==7)this.plate = plate;
 	}
 	
 	public String getMaker() {
@@ -54,7 +54,7 @@ public class Vehicle {
 	}
 
 	public void setVin(String vin) {
-		this.vin = vin;
+		if(vin.length()==17)this.vin = vin;
 	}
 
 	public LocalDate getProductionDate() {
