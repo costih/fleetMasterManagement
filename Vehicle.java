@@ -1,5 +1,7 @@
 package fleetMasterManagement;
 
+import java.time.LocalDate;
+
 public class Vehicle {
 	private String maker;
 	private String model;

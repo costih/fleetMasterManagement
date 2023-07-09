@@ -3,7 +3,7 @@ package fleetMasterManagement;
 public class Employee extends Person {
 	private double salary;
 	private String role;
-	private String [] roles = {"trucker","manager","mechanic"};
+	//private String [] roles = {"trucker","manager","mechanic"};
 	
 	
 	public String getRole() {
@@ -19,7 +19,7 @@ public class Employee extends Person {
 	}
 
 	public void setSalary(double salary) {
-		this.salary = salary;
+		if(salary>0)this.salary = salary;
 	}
 
 	public Employee() {

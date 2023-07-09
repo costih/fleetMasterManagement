@@ -65,7 +65,7 @@ public class Person {
 	 * @param cnp the cnp to set
 	 */
 	public void setCnp(String cnp) {
-		this.cnp = cnp;
+		if(cnp.length()==13)this.cnp = cnp;
 	}
 	/**
 	 * @return the phone
@@ -77,7 +77,8 @@ public class Person {
 	 * @param phone the phone to set
 	 */
 	public void setPhone(String phone) {
-		(if phone.lenght()==10)this.phone = phone;
+		if((phone.length()==10)&&(phone.startsWith("0")))this.phone = phone;
+		if((phone.length()==12)&&(phone.startsWith("+")))this.phone = phone;
 	}
 	
 	
