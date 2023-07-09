@@ -4,8 +4,8 @@ public class SemiTrailer extends Vehicle {
 	
 	private String trailerType;
 	private int [] dimensions = new int[3]; //hight width length
-	private int weight;
-	private int maxCapacity;
+	private int weight;			//semi trailer weight
+	private int maxCapacity; 	//max cargo weight
 				
 	private String cargoType; //ex: container
 	public String getCargoType() {
